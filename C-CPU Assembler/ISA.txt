@@ -1,0 +1,45 @@
+﻿# Table format:
+# type value key
+# value is a hex number that corresponds to the key
+# key is a specially formatted key:
+# %r is a register
+# %n is a literal value that is to be output after the instruction
+# type is the type of entry: o for opcode, r for operands.
+
+#### OpCodes
+o	0000	jeq		%n
+o	0800	jne		%n
+o	1000	jlt		%n
+o	1800	jgt		%n
+o	2000	jc		%n
+o	2800	jnc		%n
+o	3000	jmp		%n
+
+o	3800	add		%r	%r
+o	4000	sub		%r	%r
+o	4800	not		%r
+o	5000	and		%r	%r
+o	5800	or		%r	%r
+o	6000	xor		%r	%r
+o	6800	shr		%r
+o	7000	shl		%r
+
+o	7800	push	%r
+o	8000	pop		%r
+o	8800	cmp		%r	%r
+
+o	9000	seti	%r	%n
+o	9800	seti.l	%r	%n
+o	A000	str		%r	%r
+o	A800	ld		%r	%r
+o	B000	set		%r	%r
+
+#### Register Table
+r 0 r0
+r 1 r1
+r 2 r2
+r 3 r3
+r 4 r4
+r 5 r5
+r 6 r6
+r 7 r7
