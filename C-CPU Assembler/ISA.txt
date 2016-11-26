@@ -8,11 +8,11 @@
 
 #### OpCodes
 o	0000	jeq		%n
-o	0001	jne		%n
-o	0002	jlt		%n
-o	0003	jgt		%n
-o	0004	jc		%n
-o	0005	jnc		%n
+o	0100	jne		%n
+o	0200	jlt		%n
+o	0300	jgt		%n
+o	0400	jc		%n
+o	0500	jnc		%n
 o	3000	jmp		%n
 
 o	3800	add		%r	%r
